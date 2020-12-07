@@ -8,11 +8,16 @@ public class gradle_java11_test {
     }
 
     public gradle_java11_test() {
+
+    }
+
+    public void processed() {
         System.out.println(getMessage());
         System.out.println(StringUtils.upperCase(getMessage()));
     }
 
+
     public static void main(String[] args) {
-        new gradle_java11_test();
+        new gradle_java11_test().processed();
     }
 }
